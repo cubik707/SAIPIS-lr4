@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>LR-3</title>
+    
+</head>
+<body>
+    <div class="flex-wrapper">
+        <header>
+            <img src="../assets/logo.png" alt="logo">
+        </header>
+        <section>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="index2.html">Результаты</a></li>
+                </ul>
+            </nav>
+            <article>
+                
+                <form name="main">
+                    <textarea id="userInput" rows="4" cols="50"></textarea>
+                    <label for="fontSize">Размер шрифта:</label>
+                    <select id="fontSize">
+                        <option value="12px">Маленький</option>
+                        <option value="16px">Средний</option>
+                        <option value="20px">Большой</option>
+                    </select>
+                    <label for="fontStyle">Начертание:</label>
+                    <select id="fontStyle">
+                        <option value="normal">Обычный</option>
+                        <option value="italic">Курсив</option>
+                        <option value="bold">Жирный</option>
+                    </select>
+                    <label for="fontColor">Цвет:</label>
+                    <select id="fontColor">
+                        <option value="black">Черный</option>
+                        <option value="blue">Синий</option>
+                        <option value="green">Зеленый</option>
+                    </select>
+                    <label for="capital">Столица:</label>
+                    <select id="capital">
+                        <option value="Москва">Москва</option>
+                        <option value="Париж">Париж</option>
+                        <option value="Лондон">Лондон</option>
+                        <option value="Токио">Токио</option>
+                        <option value="Вашингтон">Вашингтон</option>
+                    </select>
+                    
+                    <label for="before">
+                        <input type="radio" id="before" name="position" value="before">
+                        Before
+                    </label>
+                    
+                    <label for="after">
+                        <input type="radio" id="after" name="position" value="after" checked>
+                        After
+                    </label>
+                    <button type="button" id="addWord">Добавить слово</button>
+                </form> 
+                <div class="paragraph">
+                    <p id="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis doloremque, non pariatur corporis dolor ratione!</p>
+                    <img id="paragraphImage" src="/assets/image.png" alt="img">
+                    <button type="button" id="addToParagraph">Добавить текст к параграфу</button>
+                </div>                                      
+            </article>
+            <aside>
+                <p class="note">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, fugiat. Beatae reprehenderit, aspernatur aliquam odio praesentium omnis velit consequatur deleniti! Libero voluptate cupiditate numquam facere aliquam unde similique voluptatum! Excepturi!
+                </p>
+            </aside>
+        </section>
+        <footer>
+            <small>674 Gonzales Drive.   Washington, PA 15301</small>
+        </footer>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
